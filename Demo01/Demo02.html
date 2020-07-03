@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta http-equiv="refresh" content="3;url='https://www.fit.hcmus.edu.vn'">
+</head>
+<body>
+    <marquee direction="right">
+        <h2>Google searching</h2>
+    </marquee>
+    <form name="frmGoogle" action="http://www.google.com" method="GET">
+        <div>
+            <span>Keyword</span>
+            <input type="text" name="q" required>
+            <input type="submit" />
+        </div>
+    </form>
+    <hr />
+    <form action="http://www.google.com" name="frmCalculate" method="POST">
+        <div>
+            <span>Number A: </span>
+            <input type="number" name="a">
+        </div>
+        <div>
+            <span>Operator: </span>
+            <select name="op" id="">
+                <option value="+">operator +</option>
+                <option value="-">operator -</option>
+                <option value="*">operator *</option>
+                <option value="/">operator /</option>
+            </select>
+        </div>
+        <div>
+            <span>Number B: </span>
+            <input type="number" name="b">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
