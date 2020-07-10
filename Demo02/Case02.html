@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element</title>
+    <title>ID</title>
     <style type="text/css">
-        h1 {
-            color: #33cc66;
-        } 
-
-        p {
+        #para-03 {
             color: #cc3366;
-            font-size: 19px;
+            font-size: 20pt;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        #footer {
+            color: #66cc33;
         }
     </style>
 </head>
@@ -20,7 +22,7 @@
     <div>
         <p>This is <span>paragraph</span> 1</p>
         <p>This is <span>paragraph</span> 2</p>
-        <p>This is <span>paragraph</span> 3</p>
+        <p id="para-03">This is <span>paragraph</span> 3</p>
         <p>This is <span>paragraph</span> 4</p>
         <ul>
             <li>item 01</li>
@@ -29,6 +31,6 @@
         </ul>
     </div>
     <p>document out-side</p>
-    <div>Footer out-side</div>
+    <div id="footer">Footer out-side</div>
 </body>
 </html>
