@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contextual</title>
+    <style type="text/css">
+        div p {
+            color: #c7a4ff;
+        }
+
+        div > p {
+            font-style: italic;
+        }
+
+        div * {
+            background-color: #cc3366;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title of document</h1>
+    <div>
+        <p>This is <span>paragraph</span> 1</p>
+        <p>This is <span>paragraph</span> 2</p>
+        <p>This is <span>paragraph</span> 3</p>
+        <p>This is <span>paragraph</span> 4</p>
+        <ul>
+            <li>item 01</li>
+            <li>item 02</li>
+            <li>item 03</li>
+            <li>
+                <p>sub-item 01</p>
+                <p>sub-item 02</p>
+            </li>
+        </ul>
+    </div>
+    <p>document out-side</p>
+    <div>Footer out-side</div>
+</body>
+</html>
