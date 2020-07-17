@@ -1,0 +1,19 @@
+.container {
+    background-color: #cc3366;
+    color: #fff;
+}
+
+.container > div > div {
+    background-color: #66cc33;
+    /* margin: 1px; */
+    /* border: 1px solid #3366CC; */
+}
+
+.container-fluid {
+    background-color: #3366CC;
+    color: #fff;
+}
+
+.item-1 { background-color: #0097a7 !important;}
+.item-2 { background-color: #ec407a !important;}
+.item-3 { background-color: #fdd835 !important; color: #000;}
