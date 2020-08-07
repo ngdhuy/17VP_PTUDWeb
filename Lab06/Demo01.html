@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document title</h1>
+    <div>List of item</div>
+    <div>
+        <ul id="lstItem">
+            <li>item 1</li>
+            <li class="a">item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li class="a">item 5</li>
+        </ul>
+    </div>
+    <div class="a">This is paragraph</div>
+    
+    <br />
+    
+    <button type="button" onclick="getInnerHTML()">Inner HTML</button>
+    <button type="button" onclick="getInnerText()">Inner Text</button>
+    <button type="button" onclick="getOuterHTML()">Outer HTML</button>
+    <button type="button" onclick="getOuterText()">Outer Text</button>
+    <button type="button" onclick="getQuerySelect()">Get Item with query select</button>
+    
+    <script type="text/javascript">
+        function getInnerHTML() {
+            let lstNode = document.getElementById("lstItem");
+            console.log(lstNode.innerHTML);
+        }
+
+        function getInnerText() {
+            let lstNode = document.getElementById("lstItem");
+            console.log(lstNode.innerText);
+        }
+
+        function getOuterHTML() {
+            let lstNode = document.getElementById("lstItem");
+            console.log(lstNode.outerHTML);
+        }
+
+        function getOuterText() {
+            let lstNode = document.getElementById("lstItem");
+            console.log(lstNode.outerText);
+            lstNode.outerText = "";
+        }
+
+        function getQuerySelect() {
+            let node = document.querySelectorAll(".a");
+            console.log(node);
+        }
+    </script>
+</body>
+</html>

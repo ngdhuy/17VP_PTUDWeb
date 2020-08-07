@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>Sign-up new account</h1>
+    <form name="frmSignUp" action="Demo00.html" method="GET" onsubmit="return IsValid()">
+        <fieldset>
+            <legend>Account information</legend>
+            <div>
+                <span class="label">Username:</span>
+                <input type="text" name="us" id="us"/>
+                <span class="error" id="errUS"></span>
+            </div>
+            <div>
+                <span class="label">Password:</span>
+                <input type="password" name="pw" id="pw" />
+                <span class="error" id="errPW"></span>
+            </div>
+            <div>
+                <input type="hidden" name="hd" id="hd" />
+            </div>
+            <div>
+                <button type="submit">Sign-up</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript">
+        function IsValid() {
+            let flag = true;
+            let control = document.getElementById("us");
+            let error = document.getElementById("errUS");
+
+            if(control.value === "")
+            {
+                let errorMessage = "Username is not blank";
+                error.innerText = errorMessage;
+                flag = false;
+            } else {
+                error.innerText = "";
+            }
+
+            control = document.getElementById("pw");
+            error = document.getElementById("errPW");
+
+            if(control.value === "")
+            {
+                let errorMessage = "Password is not blank";
+                error.innerText = errorMessage;
+                flag = false;
+            } else {
+                error.innerText = "";
+            }
+
+            let hdNode = document.getElementById("hd");
+            hdNode.value = 999;
+
+            return flag;
+        }
+    </script>
+</body>
+</html>

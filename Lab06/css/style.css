@@ -1,0 +1,18 @@
+.label {
+    display: inline-block;
+    width: 80px;
+    color: #3366cc;
+}
+
+.error {
+    color: #cc3366;
+    font-style: italic;
+}
+
+div {
+    margin: 10px;
+}
+
+button {
+    width: 235px;
+}
