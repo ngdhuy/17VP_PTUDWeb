@@ -1,0 +1,14 @@
+html
+head
+    title Product
+    body
+        form(action='/product', method='POST')
+            div
+                label(for='name') Name:
+                input(name='name')
+            br
+            div
+                label(for='price') Price:
+                input(name='price')
+            br
+            button(type='submit') Create Product
